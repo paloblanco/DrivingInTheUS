@@ -14,6 +14,23 @@ python -m venv venv -- assuming you have python isntalled and in your path.
 ```
 python -m pip install -r requirements.txt
 ```
+4. You will need to acquire the data for this analysis yourself - I have not committed them to this repo. You can find links to the data below. I recommend finding them and creating a directory structure as follows:
+```
+projectroot
+- venv
+- .gitignore
+- requirements.txt
+- data # you will need to make this and the following structure
+    - raw
+        - US_Accidents_Dec21_updated.csv
+        - US_Constructions_Dec21.csv
+        - hm60.xls
+        - fta-apportionments-formula-and-discretionary-programs-state-fy-1998-2022-Full-Year.xls
+    - working
+        - FTA_funding_2021_raw.csv
+        - hm60_raw.csv
+```
+- NOTE - the csv files in the working directory above were created from the excel files referenced in "raw". Instructions on creating these excel files without MS Excel are below. The schema which results from this activity can be viewed in "DrivingAnalysisExploration.ipynb"
 
 ### Data
 

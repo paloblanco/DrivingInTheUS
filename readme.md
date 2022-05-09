@@ -1,6 +1,15 @@
 # Analysis of the worst US states for driving
 
-This is an analysis of the worst states in the US for driving. I am creating this repo (and an associated blog post!) as part of the "Data Scientist Nanodegree Program" with Udacity
+This is an analysis of the worst states in the US for driving. I am creating this repo (and an associated blog post!) as part of the "Data Scientist Nanodegree Program" with Udacity. You can read the blog pots associated with this analysis here: https://paloblanco.github.io/drivingblog.html
+
+## Motivation
+
+Through the usage of accident and construction records for 2021, I would like to answer the following questions:
+
+1. When we normalize for the amount of roads, which states exhibit the highest frequency of traffic events? The lowest?
+2. Is there a significant difference in highway vs non-highway traffic event occurrence? Do states which fair poorly in one category also fair poorly in the other?
+3. Does accident frequency correlate to construction frequency? Do these correlate in some states but not others?
+4. Generally speaking, is there a correlation between the amount of funding a state receives and the amount of construction which occurs? Do accidents have any correlation with funding?
 
 ## Setup
 If you want to recreate this analysis, you can follow the instructions below. This was executed on Windows 10 and edited in VS Code, but I see no reason why this won't run on other platforms. You WILL need python on your system.
@@ -32,7 +41,7 @@ projectroot
 ```
 - NOTE - the csv files in the working directory above were created from the excel files referenced in "raw". Instructions on creating these excel files without MS Excel are below. The schema which results from this activity can be viewed in "DrivingAnalysisExploration.ipynb"
 
-### Data
+## Data
 
 I have utilized the following datasets:
 
@@ -58,3 +67,14 @@ I could use pandas to create reproducible code to clean up these sheets, but "ex
 - Concatenate text from multiple description cells to create a single, useful header row
 - Un-merge merged cells and make sure these data are properly included in my header row
 I have saved these sheets as unformatted csv files. The schema for these can be viewed in my exploration notebook.
+
+## Acknowledgements
+
+Special thanks to Sobhan Moosavi and their research team, who have provided much of the data seen here and have continued to update it beyond their initial contribution.
+
+Datasets used and credits:
+
+1. US Accidents (2016 - 2021) - https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents?datasetId=199387&sortBy=voteCount - Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.
+2. US Road Construction and Closures (2016 - 2021) | Kaggle - https://www.kaggle.com/datasets/sobhanmoosavi/us-road-construction-and-closures - Moosavi, Sobhan, Mohammad Hossein Samavatian, Srinivasan Parthasarathy, and Rajiv Ramnath. “A Countrywide Traffic Accident Dataset.”, 2019.
+3. Federal Highway Administration. 2020. Table HM-60 - Highway Statistics 2020 - Policy | Federal Highway Administration (dot.gov) - https://www.fhwa.dot.gov/policyinformation/statistics/2020/hm60.cfm
+4. Federal Transit Administration. 2020. FTA Allocations for Formula and Discretionary Programs by State FY 1998-2022 Full Year | FTA (dot.gov) - https://www.transit.dot.gov/funding/grants/fta-allocations-formula-and-discretionary-programs-state-fy-1998-2022-full-year
